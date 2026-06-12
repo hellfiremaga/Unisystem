@@ -1,0 +1,357 @@
+---
+id: Magie
+title: Magie
+description: Description de la magie
+slug: /Magie
+sidebar_label: Magie
+sidebar_position: 801
+---
+
+import Source from '@site/src/components/Source';
+
+# <span className="font-magie">Magie</span>
+
+## <span className="font-magie">Métaphysiques</span>
+
+## <span className="font-magie">Invocations mineures</span>
+
+Un certain nombre d'invocations sont décrites ci-dessous. Une brève description présente leurs caractéristiques, suivie par une liste d'effets possibles et de coûts en essence. La liste pour chaque invocation couvre quelques exemples de base. Des joueurs créatifs pourront sans doute trouver d'autres effets. Le MJ pourra s'appuyer sur les exemples fournis pour déterminer leur coût en essence.
+
+Les invocations repertoriées ci-dessous sont parmi les invocations mineures les plus courantes. Les invocations mineures couvrent la plupart des aspects de la magie, ce qui inclut les quatre éléments classiques et les pouvoirs sur les esprits, les émotions et la chance. La plupart des sorciers élus n'avancent jamais au-delà de ce niveau. Les personnages débutants ne peuvent apprendre que cette magie-ci.
+
+### <span className="font-magie">Invocations et distances</span>
+
+A moins qu'il n'en soit spécifié autrement, la plupart des invocations ont une portée effective la ligne de vue : si le mage peut voir la cible, il peut l'affecter. Généralement, cela signifie que la cible doit se trouver à proximité du mage (à portée de main). En théorie, il est possible de lancer une invocation sur une cible distante de plus de 1500m, mais si le mage ne peut pas voir clairement la cible, une pénalité de -3 est appliquée à tous les jets pour l'invocation. Lancer une invocation via un dispositif de vision à distance, comme une caméra de télévision, ne fonctionne que si le mage connaît parfaitement et intimement le lieu filmé (cela fonctionnera avec les caméras de sécurité de la maison du mage, mais pas sur une interview télévisée, quelque part à New York). Même lorsque c'est possible, l'utilisation d'une invocation à travers un tel dispositif impose une pénalité de -4.
+
+### <span className="font-magie">Tableau récapitulatif</span> {/* #TableauMineur */}
+
+<table>
+  <thead>
+    <tr>
+      <th>Traduction</th>
+      <th>Nom original</th>
+      <th>Référence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[Affecter la psyché](#affect)</td>
+      <td>Affect the psyche</td>
+      <td>
+        <a href="/docs/Glossaire#wc1">WC1 p155</a><br />
+        <a href="/docs/Glossaire#wc2">WC2 p209</a><br />
+        <a href="/docs/Glossaire#a2">A2 p209</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Air élémentaire</td>
+      <td>Elemental air</td>
+      <td>
+        <a href="/docs/Glossaire#wc1">WC1 p157</a><br />
+        <a href="/docs/Glossaire#wc2">WC2 p212</a><br />
+        <a href="/docs/Glossaire#a2">A2 p212</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Bénédiction</td>
+      <td>Blessing</td>
+      <td>
+        <a href="/docs/Glossaire#wc1">WC1 p155</a><br />
+        <a href="/docs/Glossaire#wc2">WC2 p210</a><br />
+        <a href="/docs/Glossaire#a2">A2 p210</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Communion</td>
+      <td>Communion</td>
+      <td>
+        <a href="/docs/Glossaire#wc1">WC1 p156</a><br />
+        <a href="/docs/Glossaire#wc2">WC2 p211</a><br />
+        <a href="/docs/Glossaire#a2">A2 p211</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Consécration</td>
+      <td>Consecration</td>
+      <td>
+        <a href="/docs/Glossaire#wc1">WC1 p156</a><br />
+        <a href="/docs/Glossaire#wc2">WC2 p212</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Eau élémentaire</td>
+      <td>Elemental water</td>
+      <td>
+        <a href="/docs/Glossaire#wc1">WC1 p158</a><br />
+        <a href="/docs/Glossaire#wc2">WC2 p216</a><br />
+        <a href="/docs/Glossaire#a2">A2 p215</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Envoi</td>
+      <td>Sending</td>
+      <td>
+        <a href="/docs/Glossaire#mc">MC p149</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Feu de l'âme</td>
+      <td>Soulfire</td>
+      <td>
+        <a href="/docs/Glossaire#wc1">WC1 p163</a><br />
+        <a href="/docs/Glossaire#wc2">WC2 p222</a><br />
+        <a href="/docs/Glossaire#a2">A2 p221</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Feu élémentaire</td>
+      <td>Elemental fire</td>
+      <td>
+        <a href="/docs/Glossaire#wc1">WC1 p158</a><br />
+        <a href="/docs/Glossaire#wc2">WC2 p215</a><br />
+        <a href="/docs/Glossaire#a2">A2 p214</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Illusion mineure</td>
+      <td>Lesser illusion</td>
+      <td>
+        <a href="/docs/Glossaire#wc1">WC1 p161</a><br />
+        <a href="/docs/Glossaire#wc2">WC2 p219</a><br />
+        <a href="/docs/Glossaire#a2">A2 p220</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Lévitation</td>
+      <td>Levitate</td>
+      <td>
+        <a href="/docs/Glossaire#mc">MC p148</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Localisation</td>
+      <td>Locate</td>
+      <td>
+        <a href="/docs/Glossaire#mc">MC p148</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Maîtrise spirituelle</td>
+      <td>Spirit mastery</td>
+      <td>
+        <a href="/docs/Glossaire#wc1">WC1 p163</a><br />
+        <a href="/docs/Glossaire#wc2">WC2 p222</a><br />
+        <a href="/docs/Glossaire#a2">A2 p222</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Malédiction mineure</td>
+      <td>Lesser curse</td>
+      <td>
+        <a href="/docs/Glossaire#wc1">WC1 p161</a><br />
+        <a href="/docs/Glossaire#wc2">WC2 p218</a><br />
+        <a href="/docs/Glossaire#a2">A2 p219</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Membres spirituels</td>
+      <td>Spirit limbs</td>
+      <td>
+        <a href="/docs/Glossaire#mc">MC p149</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Perspicacité</td>
+      <td>Insight</td>
+      <td>
+        <a href="/docs/Glossaire#wc1">WC1 p160</a><br />
+        <a href="/docs/Glossaire#wc2">WC2 p218</a><br />
+        <a href="/docs/Glossaire#a2">A2 p217</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Portail</td>
+      <td>Gateway</td>
+      <td>
+        <a href="/docs/Glossaire#wc1">WC1 p159</a><br />
+        <a href="/docs/Glossaire#wc2">WC2 p217</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Projection de l'âme</td>
+      <td>Soul projection</td>
+      <td>
+        <a href="/docs/Glossaire#wc1">WC1 p162</a><br />
+        <a href="/docs/Glossaire#wc2">WC2 p221</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Protection</td>
+      <td>Shielding</td>
+      <td>
+        <a href="/docs/Glossaire#wc1">WC1 p161</a><br />
+        <a href="/docs/Glossaire#wc2">WC2 p220</a><br />
+        <a href="/docs/Glossaire#a2">A2 p220</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Purification</td>
+      <td>Cleansing</td>
+      <td>
+        <a href="/docs/Glossaire#wc1">WC1 p155</a><br />
+        <a href="/docs/Glossaire#wc2">WC2 p210</a><br />
+        <a href="/docs/Glossaire#a2">A2 p210</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Refuge</td>
+      <td>Hideaway</td>
+      <td>
+        <a href="/docs/Glossaire#mc">MC p146</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Répulsion</td>
+      <td>Warding</td>
+      <td>
+        <a href="/docs/Glossaire#wc1">WC1 p164</a><br />
+        <a href="/docs/Glossaire#wc2">WC2 p224</a><br />
+        <a href="/docs/Glossaire#a2">A2 p223</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Soin mineur</td>
+      <td>Lesser healing</td>
+      <td>
+        <a href="/docs/Glossaire#wc1">WC1 p161</a><br />
+        <a href="/docs/Glossaire#wc2">WC2 p219</a><br />
+        <a href="/docs/Glossaire#a2">A2 p219</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Symboles de protection</td>
+      <td>Symbols of protection</td>
+      <td>
+        <a href="/docs/Glossaire#wc1">WC1 p164</a><br />
+        <a href="/docs/Glossaire#wc2">WC2 p223</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Terre élémentaire</td>
+      <td>Elemental earth</td>
+      <td>
+        <a href="/docs/Glossaire#wc1">WC1 p157</a><br />
+        <a href="/docs/Glossaire#wc2">WC2 p214</a><br />
+        <a href="/docs/Glossaire#a2">A2 p213</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Vision astrale</td>
+      <td>Farsight</td>
+      <td>
+        <a href="/docs/Glossaire#wc1">WC1 p158</a><br />
+        <a href="/docs/Glossaire#wc2">WC2 p217</a><br />
+        <a href="/docs/Glossaire#a2">A2 p216</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+### <span className="font-magie">Affecter la psyché</span> {/* #affect */}
+
+[Retour au tableau récapitulatif des invocations mineures](#TableauMineur)
+
+## <span className="font-magie">Invocations majeures</span>
+
+<table>
+  <thead>
+    <tr>
+      <th>Traduction</th>
+      <th>Nom original</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Autorité climatique</td>
+      <td>Weather lordship</td>
+      <td>
+        <a href="/docs/Glossaire#mc">MC p158</a><br />
+        <a href="/docs/Glossaire#a2">A2 p224</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Drainer les émotions</td>
+      <td>Tap emotions</td>
+      <td>
+        <a href="/docs/Glossaire#mc">MC p157</a><br />
+        <a href="/docs/Glossaire#a2">A2 p223</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Illusion majeure</td>
+      <td>Greater illusion</td>
+      <td>
+        <a href="/docs/Glossaire#mc">MC p156</a><br />
+        <a href="/docs/Glossaire#a2">A2 p218</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Maîtrise de l'essence</td>
+      <td>Essence mastery</td>
+      <td>
+        <a href="/docs/Glossaire#mc">MC p155</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Maîtrise des zombies</td>
+      <td>Zombie mastery</td>
+      <td>
+        <a href="/docs/Glossaire#ac">AC p100</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Malédiction mortelle</td>
+      <td>Death Curse</td>
+      <td>
+        <a href="/docs/Glossaire#mc">MC p152</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Monture des dieux</td>
+      <td>Mount of the gods</td>
+      <td>
+        <a href="/docs/Glossaire#ac">AC p100</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Passage</td>
+      <td>Walkgate</td>
+      <td>
+        <a href="/docs/Glossaire#mc">MC p158</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Renforcement</td>
+      <td>Empowerment</td>
+      <td>
+        <a href="/docs/Glossaire#mc">MC p152</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Soin majeur</td>
+      <td>Greater healing</td>
+      <td>
+        <a href="/docs/Glossaire#mc">MC p154</a><br />
+        <a href="/docs/Glossaire#a2">A2 p217</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Ubiquité</td>
+      <td>Bilocation</td>
+      <td>
+        <a href="/docs/Glossaire#mc">MC p150</a>
+      </td>
+    </tr>
+  </tbody>
+</table>

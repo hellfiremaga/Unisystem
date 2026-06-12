@@ -93,16 +93,40 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'sidebarUnivers',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Univers',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
+            type: 'docSidebar',
+            sidebarId: 'sidebarRole',
+            position: 'left',
+            label: 'Rôle',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'sidebarRegles',
+            position: 'left',
+            label: 'Règles',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'sidebarCongregations',
+            position: 'left',
+            label: 'Congrégations',
+          },
+          /*{to: '/blog', label: 'Blog', position: 'left'},*/
+          {
+            type: 'docSidebar',
+            label: 'MJ',
+            sidebarId: 'sidebarMJ',
+            position: 'right',
+          }
+          /*{
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',
-          },
+          },*/
         ],
       },
       footer: {

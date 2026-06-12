@@ -28,3 +28,140 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* =============================================================================
+   1. POLICES PERSONNALISÉES
+   fichiers à mettre dans static/fonts/
+   ============================================================================= */
+
+/*exemple : 
+@font-face {
+  font-family: 'FontTitre';
+  src: url('/fonts/titre-font.woff2') format('woff2'),
+       url('/fonts/titre-font.woff')  format('woff'),
+       url('/fonts/titre-font.ttf')   format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.font-titre     { font-family: 'FontTitre',    sans-serif; }
+*/
+
+@font-face {
+  font-family: 'Magie';
+  src: url('/fonts/stonehen.ttf')   format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clairvoyance';
+  src: url('/fonts/Serpentine-Bold-Bold Regular.ttf')   format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Necromancie';
+  src: url('/fonts/HauntAOE.ttf')   format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'InspiDivine';
+  src: url('/fonts/copperplate-gothic-light.ttf')   format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DisciplineChaire';
+  src: url('/fonts/FairyDustB.ttf')   format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TaoChi';
+  src: url('/fonts/ChowFun.ttf')   format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-magie { font-family: 'Magie', sans-serif; }
+.font-clairvoyance { font-family: 'Clairvoyance', sans-serif; }
+.font-necromancie { font-family: 'Necromancie', sans-serif; }
+.font-inspi-divine { font-family: 'InspiDivine', sans-serif; }
+.font-discipline-chaire { font-family: 'DisciplineChaire', sans-serif; }
+.font-tao-chi { font-family: 'TaoChi', sans-serif; }
+
+/* =============================================================================
+   2. COULEURS DE POINTS — classes utilitaires (opt-in)
+   Usage MDX : <span className="points-attribut">3</span>
+   ============================================================================= */
+
+/* Attribut — bleu ardoise */
+.points-attribut {
+  color: #4A7CC9;
+}
+
+/* Qualité — vert mousse */
+.points-qualite {
+  color: #5A9E6F;
+}
+
+/* Défaut — rouge brique */
+.points-defaut {
+  color: #C94A4A;
+}
+
+/* Compétence — orange brûlé */
+.points-competence {
+  color: #C97A2A;
+}
+
+/* Métaphysique — violet profond */
+.points-metaphysique {
+  color: #7A4AC9;
+}
+
+/* Mixte Qualité + Métaphysique — dégradé vert → violet */
+.points-mixte {
+  background: linear-gradient(to right, #5A9E6F, #7A4AC9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* Fallback pour les navigateurs sans support du clip */
+  color: #5A9E6F;
+}
+
+/* =============================================================================
+   3. COMPOSANT <Source /> — style de l'annotation de source
+   Le rendu visuel est géré ici ; la logique JSX dans Source.jsx
+   ============================================================================= */
+
+.source-annotation {
+  display: inline-block;
+  margin-left: 0.5em;
+  font-size: 0.75em;
+  color: var(--ifm-color-emphasis-500);
+  font-style: italic;
+  vertical-align: baseline;
+  white-space: nowrap;
+  opacity: 0.8;
+}
+
+.source-annotation::before {
+  content: '[';
+}
+
+.source-annotation::after {
+  content: ']';
+}
