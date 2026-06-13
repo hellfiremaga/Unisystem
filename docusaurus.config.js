@@ -32,7 +32,11 @@ const config = {
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -133,37 +137,45 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Unisystem',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Eden Studios',
+                to: 'https://www.edenstudios.net/',
+              },
+              {
+                label: 'C.J. Carella',
+                to: 'https://www.cjcarella.com/',
               },
             ],
-          },
+          },  
           {
-            title: 'Community',
+            title: 'Retrouvez moi sur les réseaux',
             items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.gg/k9bh7rvxNy',
               },
               {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'Twitch',
+                href: 'https://www.twitch.tv/hellfiremaga',
+              },
+              {
+                label: 'Youtube',
+                href: 'https://www.youtube.com/@LesrediffusionsdelivedeMaga',
+              },
+              {
+                label: 'Odysée',
+                href: 'https://odysee.com/@Hellfiremaga:8',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Docusaurus',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Site officiel',
+                href: 'https://docusaurus.io/',
               },
               {
                 label: 'GitHub',
