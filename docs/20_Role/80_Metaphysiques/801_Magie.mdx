@@ -7,11 +7,16 @@ sidebar_label: Magie
 sidebar_position: 801
 ---
 
+import Sources from '@site/src/components/Sources';
 import Source from '@site/src/components/Source';
 
 # <span className="font-magie">Magie</span>
 
+
+
 ## <span className="font-magie">Métaphysiques</span>
+
+
 
 ## <span className="font-magie">Invocations mineures</span>
 
@@ -19,9 +24,14 @@ Un certain nombre d'invocations sont décrites ci-dessous. Une brève descriptio
 
 Les invocations repertoriées ci-dessous sont parmi les invocations mineures les plus courantes. Les invocations mineures couvrent la plupart des aspects de la magie, ce qui inclut les quatre éléments classiques et les pouvoirs sur les esprits, les émotions et la chance. La plupart des sorciers élus n'avancent jamais au-delà de ce niveau. Les personnages débutants ne peuvent apprendre que cette magie-ci.
 
+
+
+
 ### <span className="font-magie">Invocations et distances</span>
 
 A moins qu'il n'en soit spécifié autrement, la plupart des invocations ont une portée effective la ligne de vue : si le mage peut voir la cible, il peut l'affecter. Généralement, cela signifie que la cible doit se trouver à proximité du mage (à portée de main). En théorie, il est possible de lancer une invocation sur une cible distante de plus de 1500m, mais si le mage ne peut pas voir clairement la cible, une pénalité de -3 est appliquée à tous les jets pour l'invocation. Lancer une invocation via un dispositif de vision à distance, comme une caméra de télévision, ne fonctionne que si le mage connaît parfaitement et intimement le lieu filmé (cela fonctionnera avec les caméras de sécurité de la maison du mage, mais pas sur une interview télévisée, quelque part à New York). Même lorsque c'est possible, l'utilisation d'une invocation à travers un tel dispositif impose une pénalité de -4.
+
+---
 
 ### <span className="font-magie">Tableau récapitulatif</span> {/* #TableauMineur */}
 
@@ -44,7 +54,7 @@ A moins qu'il n'en soit spécifié autrement, la plupart des invocations ont une
       </td>
     </tr>
     <tr>
-      <td>Air élémentaire</td>
+      <td>[Air élémentaire](#air)</td>
       <td>Elemental air</td>
       <td>
         <a href="/docs/Glossaire#wc1">WC1 p157</a><br />
@@ -53,7 +63,7 @@ A moins qu'il n'en soit spécifié autrement, la plupart des invocations ont une
       </td>
     </tr>
     <tr>
-      <td>Bénédiction</td>
+      <td>[Bénédiction](#benediction)</td>
       <td>Blessing</td>
       <td>
         <a href="/docs/Glossaire#wc1">WC1 p155</a><br />
@@ -62,7 +72,7 @@ A moins qu'il n'en soit spécifié autrement, la plupart des invocations ont une
       </td>
     </tr>
     <tr>
-      <td>Communion</td>
+      <td>[Communion](#communion)</td>
       <td>Communion</td>
       <td>
         <a href="/docs/Glossaire#wc1">WC1 p156</a><br />
@@ -71,7 +81,7 @@ A moins qu'il n'en soit spécifié autrement, la plupart des invocations ont une
       </td>
     </tr>
     <tr>
-      <td>Consécration</td>
+      <td>[Consécration](#consecration)</td>
       <td>Consecration</td>
       <td>
         <a href="/docs/Glossaire#wc1">WC1 p156</a><br />
@@ -79,7 +89,7 @@ A moins qu'il n'en soit spécifié autrement, la plupart des invocations ont une
       </td>
     </tr>
     <tr>
-      <td>Eau élémentaire</td>
+      <td>[Eau élémentaire](#eau)</td>
       <td>Elemental water</td>
       <td>
         <a href="/docs/Glossaire#wc1">WC1 p158</a><br />
@@ -88,14 +98,14 @@ A moins qu'il n'en soit spécifié autrement, la plupart des invocations ont une
       </td>
     </tr>
     <tr>
-      <td>Envoi</td>
+      <td>[Envoi](#envoi)</td>
       <td>Sending</td>
       <td>
         <a href="/docs/Glossaire#mc">MC p149</a>
       </td>
     </tr>
     <tr>
-      <td>Feu de l'âme</td>
+      <td>[Feu de l'âme](#feuame)</td>
       <td>Soulfire</td>
       <td>
         <a href="/docs/Glossaire#wc1">WC1 p163</a><br />
@@ -104,7 +114,7 @@ A moins qu'il n'en soit spécifié autrement, la plupart des invocations ont une
       </td>
     </tr>
     <tr>
-      <td>Feu élémentaire</td>
+      <td>[Feu élémentaire](#feu)</td>
       <td>Elemental fire</td>
       <td>
         <a href="/docs/Glossaire#wc1">WC1 p158</a><br />
@@ -257,9 +267,107 @@ A moins qu'il n'en soit spécifié autrement, la plupart des invocations ont une
   </tbody>
 </table>
 
+---
+
 ### <span className="font-magie">Affecter la psyché</span> {/* #affect */}
 
+Cette invocation utilise la nature émotionnelle de l'essence pour changer les sentiments d'une personne. Elle peut être utilisée pour impressionner, charmer ou effrayer la cible. Le MJ décide si l'état émotionnel de la personne affectée change son comportement de la façon prévue par le mage. Par exemple, un assaillant potentiel qui est effrayé peut s'enfuir, se rendre ou attaquer comme un animal pris au piège.
+
+#### <span className="font-magie">Influence l'état émotionnel</span>
+
+Cet effet coûte 1 point d'essence si la personne tendait vers l'émotion voulue, 2 points d'essence pour inspirer une émotion différente et 5 points d'essence pour une émotion exactement opposée (c'est-à-dire de la colère si la personne était heureuse, ou de la peur si elle était calme). Cette aptitude est résistée par un test difficile de volonté. En temps normal, le changement émotionnel est de courte durée : 1 tour par niveau de réussite dans l'épreuve de concentration. Utilisée en combinaison avec la manipulation psychologique ou la séduction normale, l'invocation peut changer l'attitude de la personne au fil du temps. Ceci va dépendre des compétences profanes du mage, de la personnalité de la cible et d'autres facteurs, à la discrétion du MJ.
+
+#### <span className="font-magie">Aura de confiance</span>
+
+Cet effet crée une impression de puissance et de contrôle autour du mage, rendant les autres réticents à s'opposer à lui. L'invocateur obtient un bonus de +2 à la plupart des épreuves d'interaction sociale avec un bonus supplémentaire égal au niveau de succès à l'épreuve de concentration. Les gens qui ont une raison de ne pas aimer - voire de haïr - le mage résiste avec un test simple de volonté. Cet effet coûte 2 points d'essence et dure 5 minutes par niveau de réussite. A la fin de cette durée, l'invocation doit être répétée pour continuer à fonctionner.
+
+<Sources>
+  <Source livre="WC1" page="155" />
+  <Source livre="WC2" page="209" />
+  <Source livre="A2" page="209" />
+</Sources>
+
 [Retour au tableau récapitulatif des invocations mineures](#TableauMineur)
+
+---
+
+### <span className="font-magie">Air élémentaire</span> {/* #air */}
+
+Un des quatre éléments de base, l'air ou le vent est une force puissante. La plupart de ses effets modifient la direction ou la vitesse du vent, mais le mage peut aussi créer de l'air là où il n'en existait pas avant.
+
+On a découvert que créer et maintenir des vents constants pour de longues périodes de temps a des effets importants sur la météo. Même un vent relativement faible, s'il n'est pas révoqué, peut déclencher des tempêtes, des tornades et pire encore à des centaines de kilomètres de là. Il est conseillé à la plupart des mages (surtout les wicce) de toujours être prudent quant à l'utilisation des effets de vents et de météo. De plus, tous les effets météorologiques nécessitent une épreuve de révocation séparée, faute de quoi ils provoquent à la fois des effets d'essence aléatoires et des perturbations climatiques imprévisibles.
+
+:::note[Retrouver la ref]
+A noter que les invocations élémentaires peuvent aussi être "chargées" avec de l'essence pour blesser des êtres immatériels, bien que ces attaques coûtent le double du coût d'essence normal.
+:::
+
+#### <span className="font-magie">Brasser de l'air</span>
+
+Créer une brève agitation de l'air (à peu près équivalente à un ventilateur électrique) coûte 1 point d'essence par tour.
+
+#### <span className="font-magie">Rafale de vent</span>
+
+Cet effet consomme 1 point d'essence par 8 Km/h de vitesse de la rafale de vent. Le vent n'affecte qu'une petite zone - environ 3m de rayon - et ne durera qu'une poignée de secondes. Des vents très forts (plus de 80 Km/h) renversent les gens, font voler les objets et infligent D4 (2) points de dommages aux personnes par tranches de 16 Km/h au-delà de 80 Km/h. Donc un vent de 96 Km/h fait D4 (2) point de dommages, une rafale de 160 Km/h inflige D4 x 5 (10) points de dégâts. Le vent peut être crée dans un périmètre de 10m par niveau de l'invocation. Ainsi, un personnage avec air élémentaire 5 peut déclencher un vent jusqu'à 50m de distance. La rafale de vent ne se déplacera que de 3m par 15Km/h de vitesse (donc un vent de 160 Km/h foncera sur une distance de 32m).
+
+#### <span className="font-magie">Vent constant</span>
+
+Ceci crée un vent continuel plutôt qu'une rafale. Ceci coûte 2 points d'essence par 3 Km/h de vitesse, plus 1 point d'essence par minute que le vent persiste, et 1 point d'essence par 10m de largeur du vent. Par exemple, créer un vent constant d'une vitesse de 15 Km/h pendant 15 minutes et affectant une zone de 100 m de large coûte 35 points d'essence (10 pour la vitesse du vent, 15 pour la durée et 10 pour la largeur).
+
+#### <span className="font-magie">Calmer le vent</span>
+
+Changer la vitesse d'un vent naturel est possible. Le coût est le même que pour l'effet de Vent constant, à ceci près que l'effet réduit la vitesse du vent dans la zone affectée. L'effet durera temps limité, mais créera une zone de calme relatif autour du personnage. Par exemple, arrêter un vent de la force d'un ouragan (150 Km/h) sur un rayon de 10 m pendant 5 minutes coûterait un total de 106 points d'essence !
+
+#### <span className="font-magie">Tornade</span>
+
+Ceci coûte 3 points d'essence par mètre de rayon de la tornade, avec un minimum de 5m de rayon. Le même coût doit être payé chaque minute pour maintenir l'effet. Une tornade peut soulever des objets jusqu'à 15 Kg par mètre de rayon. Elle peut être utilisée pour transporter une personne ou des passagers, mais la piloter requiert un jet de concentration toutes les minutes si le déplacement se fait en ligne droite, ou tous les tours si des manœuvres complexes sont tentées. Une tornade obscurcit la vision et peut infliger des dommages aux immeubles, aux arbres et autres structures fixes. Les dommages sont égaux à D6 x 2 (6) x (rayon de la tornade en m). Les gens et les petits objets ne prennent pas de dommages directs de la tempête, mais sont soulevés et finalement projetés au loin, encaissant des dommages dus à la chute (voir [Règles sur la chute](./docs/30_Règles/50_Autres#Chute)). Les personnes attrapées sont soulevées jusqu'à la moitié de la taille de la tornade (arrondis au supérieur, en mètres). Les objets pris dans la tornade sont susceptibles de faire des victimes toutes proches, infligeant la moitié des dommages normaux de la tornade noté ci-dessus.
+
+#### <span className="font-magie">Purifier et créer de l'air</span>
+
+Avec cet effet, le mage peut transformer de l'essence pure en air normal et enlever toutes les impuretés et les poisons dans un volume d'air. Il peut éviter l'asphyxie même s'il est enfermé dans une petite pièce hermétique. Le coût pour créer suffisamment d'air afin qu'une personne puisse respirer pendant une minute est de 2 points d'essence. Le mage peut aussi neutraliser les effets de la fumée, du gaz empoisonné et de tout autres dangers. En dépendant 1 point d'essence par tour, le mage peut créer une bulle d'air propre autour de lui à une pression supérieure à celle de la zone environnante. Cette bulle permet au mage de marcher à travers des zones pleines de gaz toxiques sans en subir les effets néfastes. Des personnes supplémentaires peuvent aussi être protégées de la même façon, au coût de 2 point d'essence par tour et par personne. Le mage peut soit dépenser l'essence à l'avance, soit maintenir la dépense d'essence de façon continue, si sa canalisation d'essence est suffisamment élevée. Ainsi, pour se protéger pendant une minute (12 tours), le personnage peut accomplir l'invocation et dépenser 24 points d'essence, ou bien lancer l'invocation et ensuite dépenser l'essence à chaque tour, aussi longtemps que nécessaire, ce qui peut durer plus ou moins de 12 tours.
+
+#### <span className="font-magie">Foudre</span>
+
+Le mage peut ioniser une portion d'air et canaliser une puissante décharge électrique qui peut blesser des gens, détruire du matériel électronique et déclencher des feux. La foudre inflige D6 (3) points de dommage par point d'essence dépensé. La valeur d'armure d'une armure en métal est divisée par 5 avant d'appliquer ces dommages. De plus, les machines avec des composants électroniques subissent le double de dommage par cette foudre. La portée de base est de 20m x (volonté du lanceur). Elle peut être étendue de 10m supplémentaires pour un point d'essence. C'est un effet de l'invocation rarement connu et jalousement gardé par ceux qui le connaissent.
+
+<Sources>
+  <Source livre="WC1" page="157" />
+  <Source livre="WC2" page="212" />
+  <Source livre="A2" page="212" />
+</Sources>
+
+[Retour au tableau récapitulatif des invocations mineures](#TableauMineur)
+
+---
+
+### <span className="font-magie">Bénédiction</span> {/* #benediction */}
+
+L'essence peut être utilisée afin d'altérer les probabilités, augmentant les chances qu'un résultat bénéfique spécifique se produise. Les bénédictions altèrent les probabilités en faveur du sujet de l'invocation, rendant la personne plus chanceuse et lui permettant de mieux réussir.
+
+L'essence dépensée dans toute bénédiction doit provenir du mage lui-même. L'essence environnante, les périodes et lieux de pouvoir, ou d'autres sources ne peuvent pas être utilisées dans ce but. De plus, l'essence dépensée n'est pas regagnée avant que les bénéfices de la bénédiction s'arrêtent. Par exemple, un mage qui se donne ou donne à quelqu'un d'autre un bonus de chance de +5, voit sa propre réserve d'essence diminuée de 15 points jusqu'à ce que les bonus soient tous utilisés.
+
+#### <span className="font-magie">Chance</span>
+
+Cet effet donne de la chance. Un bonus de +1 est obtenu par tranche de 3 points d'essence dépensés et qui peut être utilisé dans n'importe quel test ou épreuve. Les bonus peuvent tous être appliqués à un seul test, ou répartis comme on le souhaite entre plusieurs tests. Une fois que les bonus de chance sont dépensés, les effets de la bénédiction prennent fin.
+
+#### <span className="font-magie">Bénédiction de réussite</span>
+
+Cet effet garantit le succès dans une petite situation impliquant des affaires banales telles qu'un contrat commercial, un examen scolaire ou un événement sportif à condition que le bénéficiaire ait eu une chance de réussir de toute façon. Cet effet coûte 5 points d'essence.
+
+#### <span className="font-magie">Bénédiction de protection</span>
+
+Cet effet protège le sujet des dommages métaphysiques. Chaque groupe de 4 points d'essence dépensés donne au sujet un bonus de +1 pour résister à une attaque surnaturelle de quelque sorte que ce soit. Cette protection est activée dès qu'une attaque hostile est menée contre le bénéficiaire de la bénédiction. La protection n'est valable que contre une seule de ces attaques. La protection disparaît après avoir contribué à bloquer une attaque. Une bénédiction de protection peut aussi être orientée contre toute forme d'attaque surnaturelle (incluant la magie, la clairvoyance, les pouvoirs des vampires et ainsi de suite), au coût de 6 points d'essence par bonus de +1.
+
+<Sources>
+  <Source livre="WC1" page="155" />
+  <Source livre="WC2" page="210" />
+  <Source livre="A2" page="210" />
+</Sources>
+
+[Retour au tableau récapitulatif des invocations mineures](#TableauMineur)
+
+---
+
+
 
 ## <span className="font-magie">Invocations majeures</span>
 

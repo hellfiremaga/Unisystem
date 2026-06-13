@@ -165,3 +165,12 @@
 .source-annotation::after {
   content: ']';
 }
+
+/* Wrapper pour aligner plusieurs <Source /> à droite sur une seule ligne */
+.sources-right {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  gap: 0.4em;
+  margin-top: 0.2em;
+}
