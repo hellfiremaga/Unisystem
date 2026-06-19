@@ -174,3 +174,12 @@
   gap: 0.4em;
   margin-top: 0.2em;
 }
+
+/* 4. Autres */
+
+/* Signature de l'auteur*/
+.signature-auteur {
+  text-align: right;
+  font-style: italic;
+  margin-top: 1em;
+}
