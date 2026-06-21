@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Unisystem',
   tagline: 'Site web regroupant les règles du jeu de rôle Unisystem',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon_unisystem.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -92,7 +92,7 @@ const config = {
         title: 'Unisystem VF',
         logo: {
           alt: 'Logo Unisystem',
-          src: 'img/logo.svg',
+          src: 'img/Unisystem_Logo.png',
         },
         items: [
           {
