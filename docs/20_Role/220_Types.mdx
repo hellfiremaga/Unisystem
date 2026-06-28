@@ -1,0 +1,717 @@
+---
+id: Types
+title: Types de personnages
+description: Description des types de personnages
+slug: /TypesPersonnages
+sidebar_label: Types de personnages
+sidebar_position: 20
+---
+
+import Sources from '@site/src/components/Sources';
+import Source from '@site/src/components/Source';
+import Link from '@docusaurus/Link';
+
+# Types de personnages
+
+Le type de personnage détermine la combinaison générale de capacités physiques et/ou mystiques d'un personnage. Dans l'Unisystem, les attributs et les traits d'un personnage sont établis en allouant un certain nombre de points. En substance, le joueur « achète » les niveaux d'attributs, de qualités et de compétences qu'il souhaite. Comme le joueur ne dispose que d'un nombre limité de points pour ses « achats », il doit faire des choix. Par exemple, si le joueur crée un personnage trop fort, il risque de ne pas lui rester assez de points pour acheter une intelligence élevée.
+
+Le type de personnage définit combien de points peuvent être dépensés pour chaque composante du personnage. Les différentes composantes pour lesquelles des points sont alloués sont les attributs, les qualités (et défauts), les compétences et la métaphysique. Ces composantes sont examinées plus en détail plus loin dans ce chapitre.
+
+Quatre types de personnages sont présentés dans ce livre. La plupart des personnages sont des Élus (dotés de pleins pouvoirs surnaturels) ou des Élus mineurs (disposant de meilleures compétences et d'attributs plus élevés, mais de capacités spéciales plus faibles). Les personnages profanes reçoivent un certain nombre de points à dépenser dans des attributs et des compétences, mais ne possèdent aucune capacité surnaturelle. Les profanes peuvent être désavantagés dans la plupart des parties, mais ils peuvent faire des personnages intéressants, en complétant leurs savoirs occultes par un vaste savoir-faire profane. Les Bast sont des métamorphes félins, et le plus surnaturel de tous les types de personnages.
+
+<Sources>
+  <Source livre="WC2" page="50" />
+</Sources>
+
+---
+
+## Tableau de répartition des points de personnage
+
+<table>
+  <colgroup>
+    <col style={{width: '200px'}}/>
+    <col style={{width: '50px'}}/>
+    <col style={{width: '50px'}}/>
+    <col style={{width: '50px'}}/>
+    <col style={{width: '50px'}}/>
+    <col style={{width: '50px'}}/>
+    <col style={{width: '50px'}}/>
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Campagne</th>
+      <th><span className="points-attribut">Att</span></th>
+      <th><span className="points-qualite">Qua</span></th>
+      <th><span className="points-defaut">Def</span></th>
+      <th><span className="points-competence">Com</span></th>
+      <th><span className="points-metaphysique">Met</span></th>
+      <th>Tot</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>[Pré-héroïque](#pre-heroique)</b></td>
+      <td colSpan="6"></td>
+    </tr>
+    <tr>
+      <td>[PH - Héros potentiel](#heros-potentiel)</td>
+      <td><span className="points-attribut">15</span></td>
+      <td><span className="points-qualite">5</span></td>
+      <td><span className="points-defaut">10</span></td>
+      <td><span className="points-competence">30</span></td>
+      <td><span className="points-metaphysique">0</span></td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>[PH - Élu debutant](#elu-debutant)</td>
+      <td><span className="points-attribut">15</span></td>
+      <td><span className="points-qualite">5</span></td>
+      <td><span className="points-defaut">10</span></td>
+      <td><span className="points-competence">25</span></td>
+      <td><span className="points-metaphysique">5</span></td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td><b>[Héroïque](#heroique)</b></td>
+      <td colSpan="6"></td>
+    </tr>
+    <tr>
+      <td>[H - Élu](#elu)</td>
+      <td><span className="points-attribut">15</span></td>
+      <td><span className="points-qualite">10</span></td>
+      <td><span className="points-defaut">10</span></td>
+      <td><span className="points-competence">25</span></td>
+      <td><span className="points-metaphysique">30</span></td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>[H - Élu mineur](#elu-mineur)</td>
+      <td><span className="points-attribut">20</span></td>
+      <td><span className="points-qualite">15</span></td>
+      <td><span className="points-defaut">10</span></td>
+      <td><span className="points-competence">30</span></td>
+      <td><span className="points-metaphysique">15</span></td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>[H - Profane](#profane)</td>
+      <td><span className="points-attribut">25</span></td>
+      <td><span className="points-qualite">20</span></td>
+      <td><span className="points-defaut">10</span></td>
+      <td><span className="points-competence">35</span></td>
+      <td><span className="points-metaphysique">0</span></td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>[H - Surnaturel mineur](#surnaturel-mineur)</td>
+      <td><span className="points-attribut">15</span></td>
+      <td><span className="points-qualite">15</span></td>
+      <td><span className="points-defaut">10</span></td>
+      <td><span className="points-competence">25</span></td>
+      <td><span className="points-metaphysique">25</span></td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td><b>[Légendaire](#legendaire)</b></td>
+      <td colSpan="6"></td>
+    </tr>
+    <tr>
+      <td>[L - Élu majeur](#elu-majeur)</td>
+      <td><span className="points-attribut">20</span></td>
+      <td><span className="points-qualite">15</span></td>
+      <td><span className="points-defaut">15</span></td>
+      <td><span className="points-competence">35</span></td>
+      <td><span className="points-metaphysique">50</span></td>
+      <td>120</td>
+    </tr>
+    <tr>
+      <td>[L - Surnaturel](#surnaturel)</td>
+      <td><span className="points-attribut">30</span></td>
+      <td><span className="points-qualite">20</span></td>
+      <td><span className="points-defaut">15</span></td>
+      <td><span className="points-competence">40</span></td>
+      <td><span className="points-metaphysique">30</span></td>
+      <td>120</td>
+    </tr>
+    <tr>
+      <td><b>[Mythique](#mythique)</b></td>
+      <td colSpan="6"></td>
+    </tr>
+    <tr>
+      <td>[M - Élu maître](#elu-maitre)</td>
+      <td><span className="points-attribut">25</span></td>
+      <td><span className="points-qualite">20</span></td>
+      <td><span className="points-defaut">15</span></td>
+      <td><span className="points-competence">55</span></td>
+      <td><span className="points-metaphysique">100</span></td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>[M - Surnaturel supérieur](#surnaturel-superieur)</td>
+      <td><span className="points-attribut">30</span></td>
+      <td><span className="points-qualite">20</span></td>
+      <td><span className="points-defaut">15</span></td>
+      <td><span className="points-competence">60</span></td>
+      <td><span className="points-metaphysique">90</span></td>
+      <td>200</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+:::info[Système optionnel de génération de point de compétence]
+
+Le système de génération de points de compétence de base alloue des points par catégorie de compétences en fonction du type de personnage choisi. Cette méthode optionnelle prend en compte l'âge du personnage, son intelligence et son milieu social. Ce système a tendance à donner plus de points de compétence aux personnages, mais il est un peu plus élaboré et chronophage. Si les joueurs et le MJ décident d'adopter le système optionnel, ignorez les points de compétence attribués par type de personnage présentés ci-dessous, et utilisez la formule suivante.
+
+**Type de personnage :** Les personnages obtiennent 10 points de compétence en moins.
+
+**Intelligence :** 3 points de compétence par niveau de l'attribut intelligence du personnage. Les personnages ayant une Intelligence de 0 ou moins ne reçoivent qu'un seul point de compétence.
+
+**Âge :** Les personnages sont supposés avoir entre 18 et 30 ans au départ (à la discrétion du joueur). Les personnages plus jeunes soustraient 5 points de compétence à leur total. Tous les 10 ans après 30 ans, les personnages ajoutent 5 points de compétence mais soustraient 2 niveaux de leurs attributs (ces soustractions peuvent être appliquées à n'importe quel attribut).
+
+*Par exemple, le personnage de Jory est un détective profane de 50 ans avec une intelligence de 5. Ses points de compétence de base sont de 25, et avec sa haute intelligence, il obtient 15 points supplémentaires. En raison de son âge, le personnage dispose de 10 points de plus à attribuer aux compétences, mais il perd 4 niveaux d'attributs. Bien qu'il ait à l'origine une force de 4, une dextérité de 3, une constitution de 3, une perception de 5, une intelligence de 5 et une volonté de 5, Jory décide de réduire la force du personnage à 2, sa perception à 4 et sa volonté à 4. Il dispose d'un total de 50 points de compétence.*
+
+Les personnages dotés d'une longévité surnaturelle (voir la qualité [âge](./QualiteDefaut#age)) reçoivent un bonus fixe de 5 points de compétence mais aucune réduction d'attribut, puis ajoutent les bonus liés à cette qualité.
+
+**Niveau social ou Ressources :** Les personnages ayant un [niveau social](./QualiteDefaut#statut) ou des [ressources](./QualiteDefaut#ressources) positifs prennent le niveau le plus élevé de l'une ou l'autre de ces qualités et ajoutent 1 point de compétence par niveau. Les personnages ayant des ressources de 0 ou moins ne reçoivent ni bonus ni pénalité.
+
+:::
+
+<Sources>
+  <Source livre="WC2" page="55" />
+</Sources>
+
+:::tip
+
+C'est un système un peu compliqué à mettre en place, surtout si vous n'avez pas formellement établi le personnage avant de répartir ses points de compétences. Ça reste un bon système sur une campagne longue avec des joueurs qui connaissent un minimum le système ou si vous avez le temps de l'établir. Je verrais pour faire une page qui détermine ces valeurs automatiquement dès que j'en aurai le temps
+
+:::
+
+---
+
+## Tableau récapitulatif des types de personnages  {/* #tableau-types */}
+
+<table>
+  <thead>
+    <tr>
+      <th>Traduction</th>
+      <th>Nom original</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[Profane](#profane3)</td>
+      <td>Mundane</td>
+      <td>
+        <Link to="./Glossaire#wc1">WC1 p51</Link>
+        <Link to="./Glossaire#wc2">WC2 p51</Link>
+      </td>
+    </tr>
+    <tr>
+      <td>[Élu mineur](#elu-mineur3)</td>
+      <td>Lesser gifted</td>
+      <td>
+        <Link to="./Glossaire#wc1">WC1 p51</Link>
+        <Link to="./Glossaire#wc2">WC2 p51</Link>
+      </td>
+    </tr>
+    <tr>
+      <td>[Élu](#elu3)</td>
+      <td>The gifted</td>
+      <td>
+        <Link to="./Glossaire#wc1">WC1 p50</Link>
+        <Link to="./Glossaire#wc2">WC2 p50</Link>
+      </td>
+    </tr>
+    <tr>
+      <td>[Bast](#bast3)</td>
+      <td>Bast</td>
+      <td>
+        <Link to="./Glossaire#wc1">WC1 p52</Link>
+        <Link to="./Glossaire#wc2">WC2 p52</Link>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+### Profane  {/* #profane3 */}
+
+**Prérequis :** Aucune compétence métaphysique
+**Coût : Aucun
+
+<table>
+  <colgroup>
+    <col style={{width: '150px'}}/>
+    <col style={{width: '200px'}}/>
+    <col style={{width: '50px'}}/>
+    <col style={{width: '50px'}}/>
+    <col style={{width: '50px'}}/>
+    <col style={{width: '50px'}}/>
+    <col style={{width: '50px'}}/>
+    <col style={{width: '50px'}}/>
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Campagne</th>
+      <th>Type</th>
+      <th><span className="points-attribut">Att</span></th>
+      <th><span className="points-qualite">Qua</span></th>
+      <th><span className="points-defaut">Def</span></th>
+      <th><span className="points-competence">Com</span></th>
+      <th><span className="points-metaphysique">Met</span></th>
+      <th>Tot</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pré-héroïque</td>
+      <td>Héros potentiel</td>
+      <td><span className="points-attribut">15</span></td>
+      <td><span className="points-qualite">5</span></td>
+      <td><span className="points-defaut">10</span></td>
+      <td><span className="points-competence">30</span></td>
+      <td><span className="points-metaphysique">0</span></td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Héroïque</td>
+      <td>Profane</td>
+      <td><span className="points-attribut">25</span></td>
+      <td><span className="points-qualite">20</span></td>
+      <td><span className="points-defaut">10</span></td>
+      <td><span className="points-competence">35</span></td>
+      <td><span className="points-metaphysique">0</span></td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>Légendaire</td>
+      <td>Surhumain</td>
+      <td><span className="points-attribut">30</span></td>
+      <td><span className="points-qualite">30</span></td>
+      <td><span className="points-defaut">15</span></td>
+      <td><span className="points-competence">60</span></td>
+      <td><span className="points-metaphysique">0</span></td>
+      <td>120</td>
+    </tr>
+    <tr>
+      <td>Mythique</td>
+      <td>Légende vivante</td>
+      <td><span className="points-attribut">30</span></td>
+      <td><span className="points-qualite">30</span></td>
+      <td><span className="points-defaut">15</span></td>
+      <td><span className="points-competence">140</span></td>
+      <td><span className="points-metaphysique">0</span></td>
+      <td>200</td>
+    </tr>
+  </tbody>
+</table>
+
+:::tip
+
+Normalement, un profane n'est pas adapté aux campagnes légendaires ou mythique. Je propose donc cette répartition des points (avec une restriction sur l'utilisation des points métaphysiques). Ca fait des personnages démesurement doué et fort, mais totalement vulnérable face au surnaturel.
+
+:::
+
+[Retour au tableau récapitulatif des types de personnages](#tableau-types)
+
+#### Héros potentiel  {/* #heros-potentiel */}
+
+#### Profane  {/* #profane */}
+
+*"Je ne sais pas ce qui se passe et je m'en fiche. Je suis sûr qu'il y a une explication logique à ceci mais pour l'instant je vais jouer le jeu, vous avez l'air de savoir ce qu'il faut faire pour ne pas se faire tuer, même si ce que vous dites est dingue."*
+
+Les profanes n'ont pas de capacités surnaturelles quelles qu'elles soient. Ils se retrouvent désavantagés dans le monde de Sorcellerie parce qu'ils n'ont pas la capacité de faire face à (et parfois même de percevoir) les nombreux dangers qui se dissimulent dans les ombres de la réalité. Les PJ profanes peuvent être des individus extraordinaires (peut être avec quelques attributs proches du maximum humain), dont les prouesses physiques ou mentales sont une grande aide pour leurs alliés et amis élus.
+
+<Sources>
+  <Source livre="WC1" page="51" />
+  <Source livre="WC2" page="51" />
+</Sources>
+
+[Retour au tableau récapitulatif des types de personnages](#tableau-types)
+
+---
+
+### Élu mineur  {/* #elu-mineur3 */}
+
+**Prérequis :** avoir [le don](./QualiteDefaut#le-don)
+**Coût : <span className="points-mixte">5 points de qualité ou de métaphysique pour le don</span>**<br/>
+
+<table>
+  <colgroup>
+    <col style={{width: '150px'}}/>
+    <col style={{width: '200px'}}/>
+    <col style={{width: '50px'}}/>
+    <col style={{width: '50px'}}/>
+    <col style={{width: '50px'}}/>
+    <col style={{width: '50px'}}/>
+    <col style={{width: '50px'}}/>
+    <col style={{width: '50px'}}/>
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Campagne</th>
+      <th>Type</th>
+      <th><span className="points-attribut">Att</span></th>
+      <th><span className="points-qualite">Qua</span></th>
+      <th><span className="points-defaut">Def</span></th>
+      <th><span className="points-competence">Com</span></th>
+      <th><span className="points-metaphysique">Met</span></th>
+      <th>Tot</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pré-héroïque</td>
+      <td>Élu débutant</td>
+      <td><span className="points-attribut">15</span></td>
+      <td><span className="points-qualite">5</span></td>
+      <td><span className="points-defaut">10</span></td>
+      <td><span className="points-competence">25</span></td>
+      <td><span className="points-metaphysique">5</span></td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Héroïque</td>
+      <td>Élu mineur</td>
+      <td><span className="points-attribut">20</span></td>
+      <td><span className="points-qualite">15</span></td>
+      <td><span className="points-defaut">10</span></td>
+      <td><span className="points-competence">30</span></td>
+      <td><span className="points-metaphysique">15</span></td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>Légendaire</td>
+      <td>Surnaturel</td>
+      <td><span className="points-attribut">30</span></td>
+      <td><span className="points-qualite">20</span></td>
+      <td><span className="points-defaut">15</span></td>
+      <td><span className="points-competence">40</span></td>
+      <td><span className="points-metaphysique">30</span></td>
+      <td>120</td>
+    </tr>
+    <tr>
+      <td>Mythique</td>
+      <td>Surnaturel majeur</td>
+      <td><span className="points-attribut">30</span></td>
+      <td><span className="points-qualite">30</span></td>
+      <td><span className="points-defaut">15</span></td>
+      <td><span className="points-competence">50</span></td>
+      <td><span className="points-metaphysique">90</span></td>
+      <td>200</td>
+    </tr>
+  </tbody>
+</table>
+
+:::tip
+
+Normalement, un élu dans les campagnes légendaires ou mythique est calqué sur le modèle d'un élu majeur (voire point suivant). Cependant, je pense que les élus peuvent garder des compétences très classiques et rester intéressant à jouer, d'où cette répartition des points calquée sur celle utilisée pour les autres races
+
+:::
+
+[Retour au tableau récapitulatif des types de personnages](#tableau-types)
+
+#### Élu débutant  {/* #elu-debutant */}
+
+#### Élu mineur  {/* #elu-mineur */}
+
+*"Je n'aime pas me reposer sur tout ce charabia. Si j'ai besoin d'appeler quelqu'un, j'utilise le téléphone. Qui a besoin de sorts ? Parfois, tout de même, on a besoin d'un peu plus qu'un flingue, d'un téléphone ou d'une voiture pour survivre et j'ai juste un petit atout en réserve pour ces occasions"*
+
+Les élus mineurs sont des personnages avec juste un peu de pouvoir surnaturel. Leurs capacités occultes restent mineures, mais les PJ qui sélectionnent ce type de personnage sont plus accomplis en d'autres matières. Bien qu'ils soient plus faibles en métaphysique, les élus mineurs ont des attributs et des compétences plus élevés que leurs homologues plus avancés sur le plan surnaturel. Ceci uniquement pour l'équilibre du jeu. Le personnage élu mineur n'a pas d'attributs ou de compétences supérieurs à la moyenne humaine.
+
+Ces personnages sont moins susceptibles d'attirer l'attention des êtres surnaturels sauf lorsqu'ils utilisent leurs capacités spéciales. Ils ont une chance de passer une vie relativement plus paisible, bien que leurs pouvoirs les entraînent souvent dans des ennuis.
+
+<Sources>
+  <Source livre="WC1" page="51" />
+  <Source livre="WC2" page="51" />
+</Sources>
+
+[Retour au tableau récapitulatif des types de personnages](#tableau-types)
+
+---
+
+### Élu  {/* #elu3 */}
+
+**Prérequis :** avoir [le don](./QualiteDefaut#le-don)
+**Coût : <span className="points-mixte">5 points de qualité ou de métaphysique pour le don</span>**<br/>
+
+<table>
+  <colgroup>
+    <col style={{width: '150px'}}/>
+    <col style={{width: '200px'}}/>
+    <col style={{width: '50px'}}/>
+    <col style={{width: '50px'}}/>
+    <col style={{width: '50px'}}/>
+    <col style={{width: '50px'}}/>
+    <col style={{width: '50px'}}/>
+    <col style={{width: '50px'}}/>
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Campagne</th>
+      <th>Type</th>
+      <th><span className="points-attribut">Att</span></th>
+      <th><span className="points-qualite">Qua</span></th>
+      <th><span className="points-defaut">Def</span></th>
+      <th><span className="points-competence">Com</span></th>
+      <th><span className="points-metaphysique">Met</span></th>
+      <th>Tot</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pré-héroïque</td>
+      <td>Élu débutant</td>
+      <td><span className="points-attribut">15</span></td>
+      <td><span className="points-qualite">5</span></td>
+      <td><span className="points-defaut">10</span></td>
+      <td><span className="points-competence">25</span></td>
+      <td><span className="points-metaphysique">5</span></td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Héroïque</td>
+      <td>Élu</td>
+      <td><span className="points-attribut">15</span></td>
+      <td><span className="points-qualite">10</span></td>
+      <td><span className="points-defaut">10</span></td>
+      <td><span className="points-competence">25</span></td>
+      <td><span className="points-metaphysique">30</span></td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>Légendaire</td>
+      <td>Élu majeur</td>
+      <td><span className="points-attribut">20</span></td>
+      <td><span className="points-qualite">15</span></td>
+      <td><span className="points-defaut">15</span></td>
+      <td><span className="points-competence">35</span></td>
+      <td><span className="points-metaphysique">50</span></td>
+      <td>120</td>
+    </tr>
+    <tr>
+      <td>Mythique</td>
+      <td>Élu maître</td>
+      <td><span className="points-attribut">25</span></td>
+      <td><span className="points-qualite">20</span></td>
+      <td><span className="points-defaut">15</span></td>
+      <td><span className="points-competence">55</span></td>
+      <td><span className="points-metaphysique">100</span></td>
+      <td>200</td>
+    </tr>
+  </tbody>
+</table>
+
+:::tip
+
+Pour les campagnes pré-héroïque, il n'y a pas de différence entre les élus. La répartition est donc la même que pour le point précédent
+
+:::
+
+[Retour au tableau récapitulatif des types de personnages](#tableau-types)
+
+---
+
+#### Élu {/* #elu */}
+
+*"Nous pouvons voir ce que les autres ne voient pas et accomplir des exploits impossibles. Mais ce n'est pas une bénédiction, j'en ai bien peur car ce que nous voyons est souvent horrible à supporter et nous devons accomplir ces exploits uniquement pour pouvoir rester en vie."*
+
+Les élus ont des pouvoirs et des sens spéciaux et ils doivent passer le plus clair de leur temps et de leur énergie à perfectionner ces capacités. Pour cette raison, ils ont le plus grand nombre de points de métaphysique, de pouvoirs et de capacités spéciales. Faire partie des élus a des avantages et des inconvénients. Ce sont les personnages les plus puissants au niveau surnaturel mais leurs pouvoirs les rendent facilement identifiables et ils sont la cible des prédateurs surnaturels, des autres élus et leurs ennemis profanes.
+
+Les élus sont aussi les plus susceptibles d'être entraînés dans les courants du destin. D'étranges événements se produisent souvent autour d'eux avec une fréquence inquiétante et ils se trouvent souvent pris dans des situations dangereuses et inhabituelles, détruisant d'ordinaire toute chance de mener une vie normale.
+
+<Sources>
+  <Source livre="WC1" page="50" />
+  <Source livre="WC2" page="50" />
+</Sources>
+
+[Retour au tableau récapitulatif des types de personnages](#tableau-types)
+
+---
+
+#### Élu majeur {/* #elu-majeur */}
+
+#### Élu maître {/* #elu-maitre */}
+
+[Retour au tableau récapitulatif des types de personnages](#tableau-types)
+
+---
+
+### Bast  {/* #bast3 */}
+
+**Prérequis :** avoir [le don](./QualiteDefaut#le-don)
+**Coût : <span className="points-mixte">5 points de qualité ou de métaphysique pour le don, +5 pour un [haut bast](#haut-bast)</span>**<br/>
+
+
+<table>
+  <colgroup>
+    <col style={{width: '150px'}}/>
+    <col style={{width: '200px'}}/>
+    <col style={{width: '50px'}}/>
+    <col style={{width: '50px'}}/>
+    <col style={{width: '50px'}}/>
+    <col style={{width: '50px'}}/>
+    <col style={{width: '50px'}}/>
+    <col style={{width: '50px'}}/>
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Campagne</th>
+      <th>Type</th>
+      <th><span className="points-attribut">Att</span></th>
+      <th><span className="points-qualite">Qua</span></th>
+      <th><span className="points-defaut">Def</span></th>
+      <th><span className="points-competence">Com</span></th>
+      <th><span className="points-metaphysique">Met</span></th>
+      <th>Tot</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pré-héroïque</td>
+      <td>Élu débutant</td>
+      <td><span className="points-attribut">15</span></td>
+      <td><span className="points-qualite">5</span></td>
+      <td><span className="points-defaut">10</span></td>
+      <td><span className="points-competence">25</span></td>
+      <td><span className="points-metaphysique">5</span></td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Héroïque</td>
+      <td>Bast</td>
+      <td><span className="points-attribut">15</span></td>
+      <td><span className="points-qualite">10</span></td>
+      <td><span className="points-defaut">10</span></td>
+      <td><span className="points-competence">30</span></td>
+      <td><span className="points-metaphysique">25</span></td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>Légendaire</td>
+      <td>Bast ancien</td>
+      <td><span className="points-attribut">20</span></td>
+      <td><span className="points-qualite">15</span></td>
+      <td><span className="points-defaut">15</span></td>
+      <td><span className="points-competence">40</span></td>
+      <td><span className="points-metaphysique">45</span></td>
+      <td>120</td>
+    </tr>
+    <tr>
+      <td>Mythique</td>
+      <td>Bast majeur</td>
+      <td><span className="points-attribut">25</span></td>
+      <td><span className="points-qualite">20</span></td>
+      <td><span className="points-defaut">15</span></td>
+      <td><span className="points-competence">65</span></td>
+      <td><span className="points-metaphysique">90</span></td>
+      <td>200</td>
+    </tr>
+  </tbody>
+</table>
+
+:::tip
+
+Les bast ayant leur propre répartition de points, j'ai adapté cela aux niveaux de campagne légendaire et mythique. C'est un ajout de ma part, vous pouvez reprendre la répartition des élus majeurs ou des personnages surnaturels si cela vous semble plus adapté.
+
+:::
+
+[Retour au tableau récapitulatif des types de personnages](#tableau-types)
+
+---
+
+#### Bast, les changeformes félins {/* #bast */}
+
+*"Nous ne sommes ni des humains, ni des animaux, ni des esprits. Nous avons été créés par la magie des anciens égyptiens et nous ne nous montrons qu'aux humains qui ont gagné notre confiance. Comme les chats qui nous ont donné notre forme, nous aimons la compagnie des humains, mais pas leurs règles."*
+
+Les basts sont des anciennes espèces d'intelligences félines, une union d'esprits élémentaires et de corps de chats normaux. Après avoir émigrés en Europe, beaucoup de basts sont devenus les amis et les alliés des Wicce et furent persécutés en tant que "familiers démoniaques" et assassinés ainsi que des milliers de chats normaux.
+
+Il y a deux types de basts. Le bast commun est lié dans la forme d'un chat, généralement un félin de taille exceptionnelle et peut seulement communiquer par le biais de la télépathie. Le haut bast peut prendre la forme d'un humain pendant de courtes périodes. Ces êtres furent autrefois les souverains des basts bien qu'ils n'aient aucun rang ou statut spécial parmi les leurs.
+
+<Sources>
+  <Source livre="WC1" page="52" />
+  <Source livre="WC2" page="52" />
+</Sources>
+
+#### Créer un bast
+
+Les basts possèdent un certain nombre d'avantages et de défauts spéciaux liés à leurs caractéristiques uniques.
+
+**Attributs :** Les attributs doivent d'abord être achetés normalement. Ensuite, certains modificateurs (bonus et pénalités) sont ajoutés aux attributs achetés.
+
+Sous forme de chat, les basts appliquent les modificateurs suivants à leurs attributs : Force -2 (la Force maximale autorisée est de 2), et Dextérité +3. *Par exemple, si une joueuse a dépensé 3 points pour acheter une Force de 3 à son personnage bast, la forme de chat n'aurait qu'une Force de 1 (le niveau 3 acheté est réduit de 2 niveaux). De plus, si la joueuse a dépensé 2 points pour acheter une Dextérité de 2, la forme de chat aurait une Dextérité de 5 (les 2 achetés initialement, plus le bonus de +3).*
+
+Les hauts basts peuvent prendre forme humaine pour de courtes périodes. Sous forme humaine, les basts ont +1 en Force et +2 en Dextérité. Appliquez ce modificateur à la force et à la dextérité qui ont été achetées à l'origine.
+
+*Pour reprendre l'exemple, la Force de 3 et la Dextérité de 2 achetées à l'origine donneraient une Force totale de 4 et une Dextérité de 4 sous forme humaine. Les deux niveaux finaux inscrits sur la feuille de personnage indiqueraient Force 1 et Dextérité 5 (sous forme de chat) et Force 4 et Dextérité 4 (sous forme humaine).*
+
+**Attributs secondaires :** Les points de vie, les points d'endurance et la vitesse sont calculés normalement, mais chaque forme a une valeur différente, basée sur les attributs de cette forme. La réserve d'essence du bast est égale à la somme de ses attributs sous forme féline. Ce nombre ne change pas pour les hauts basts sous forme humaine.
+
+**Qualités et défauts :** Être un bast commun ne coûte rien, mais la qualité [le don](./QualiteDefaut#le-don) doit être achetée. Les hauts basts, plus puissants, doivent en outre acheter la qualité du même nom à 5 points. En raison de leur nature féline, certains bast sont [cruels](./QualiteDefaut#cruel) et [paresseux](./QualiteDefaut#paresseux). Puisqu'ils peuvent surbenir à leurs besoins par leurs propres moyens, les faibles niveaux de [ressources](./QualiteDefaut#ressources) n'ont aucun sens pour les basts. Les personnages n'obtiennent pas de points supplémentaires grâce à des niveaux de ressources négatifs.
+
+**Compétences :** Les basts disposent d'un éventail limité de compétences. En règle générale, toute compétence nécessitant l'utilisation des mains et des doigts (en particulier des pouces opposables) est interdite aux basts communs. Même les hauts basts ont du mal à apprendre des compétences telles que la conduite et l'utilisation d'armes. Ces compétences sont apprises en tant que compétences spéciales, pour un coût en points plus élevé. Les seules exceptions sont [bagarre](./Competences#bagarre) et [arts martiaux](./Competences#arts-martiaux). Les basts possèdent leur propre système de combat avec leurs mains et leurs armes naturelles, et ces compétences s'apprennent normalement.
+
+**Association :** Les basts peuvent sélectionner n'importe quelle association accessible à un personnage humain. La plupart des basts sont des Wicce ou des Loups solitaires, mais quelques-uns ont rejoint d'autres alliances.
+
+<Sources>
+  <Source livre="WC1" page="198" />
+  <Source livre="WC2" page="52" />
+</Sources>
+
+#### Jouer un bast
+
+Les basts sont idéalement incarnés par les amateurs de chats. Un personnage peut être basé sur l'animal familier du joueur. Le bast se comporte assez comme un chat normal. Ils semblent avoir une confiance placide en ce qui concerne leur place dans le monde. Lorsqu'ils font une gaffe, ils font comme si rien n'était arrivé, ou encore mieux, comme si leur gaffe était intentionnelle. Lorsqu'ils se reposent, beaucoup s'étirent en prenant des poses ridicules. Lorsqu'on le regardez avec affection, ils répondent les yeux mi-clos. Lorsqu'ils sont heureux, leur queue se redresse et lorsqu'ils sont anxieux ou apeurés, leurs oreilles se plaquent sur leur tête. En cas de contrariété, leur queue cingle l'air.
+
+<Sources>
+  <Source livre="WC1" page="200" />
+  <Source livre="WC2" page="54" />
+</Sources>
+
+####	Pouvoirs communs aux basts
+
+Certains de ces pouvoirs sont communs à tous les basts. Certains doivent être acheté par des points de métaphysique et d'autres sont limités aux hauts basts.
+
+<Sources>
+  <Source livre="WC1" page="200" />
+  <Source livre="WC2" page="53" />
+</Sources>
+
+##### Armes naturelles
+
+Les griffes et les crocs d'un bast infligent D3 (1) x Force dégâts tranchants. Leur petite taille les rend plus difficiles à être touché. Toutes les attaques faites par un humain (ou une créature de cette taille) à l'encontre d'un bast sous sa forme féline souffrent d'une pénalité de -2 dû à sa petite taille.
+
+##### Capacités magiques
+
+Les basts et hauts basts peuvent apprendre des invocations et acquérir [canalisation d'essence](./QualiteDefaut#canalisation-essence) en dépensant simplement le coût demandé. Contrairement aux mages classiques, les basts apprennent les invocations par un processus de révélation mystique. Ils gagnent du pouvoir en consultant l'esprit collectif des basts (souvent nommé déesse Bastet). En termes de jeu, le bast peut apprendre de nouvelles invocations en dépensant les points d'expérience et n'a pas besoin d'un professeur.
+
+##### Forme humaine
+
+Un haut bast peut se changer en humain en dépensant 1 point d'essence pour 10 minutes de transformation. Cette essence n'est pas regagnée à moins que le personnage ne reprenne sa forme féline. Chaque bast a seulement une forme humaine qui reflète la race du chat. Certains basts calico, par exemple, ont des cheveux parsemés de mèches blanches, grises, rousses et noires, comme s'ils avaient une teinture inhabituelle.
+
+Sous forme humaine, les hauts basts ont un contrôle limité sur leur corps. Lorsqu'ils sont en colère ou terrifiés, leurs yeux deviennent des yeux de chat à la pupille à fente verticale et ils peuvent sortir leurs griffes et leurs crocs. Les griffes et les crocs du bast sous cette forme infligent D4 (2) x Force dégâts tranchants.
+
+##### Objets liés
+
+Les hauts basts ont le pouvoir d'imprégner des objets d'essence, forgeant un lien mystique qui leur permet d'emporter ces objets durant une transformation. Les vêtements sont les objets les plus communément liés. Lorsque le haut bast prend une forme humaine, le personnage apparaît avec ces objets sur lui. Le lien demande 1 point d'essence par demi-kilo (500g). Cette essence ne peut être regagnée avant que l'objet soit détruit ou que le bast ne tranche le lien. Seuls les objets qui peuvent être transportés peuvent être liés (on ne peut donc pas lier une voiture ou un bâtiment…).
+
+##### Réincarnation
+
+Tous les basts peuvent survivre à la mort de leur enveloppe physique. Si le corps du félin est tué, leur essence est libérée et peut subsister sous cette forme incorporelle pendant un certain temps. Bien qu'ils perdent un point d'essence par jour passé sous cette forme, les basts ont tous le pouvoir d'un esprit animal classique. L'esprit du bast migre dans le corps de la première femelle sur le point d'avoir ses petits et se réincarne dans un nouveau corps. Le MJ peut décider que cette réincarnation se produit trop loin pour que le personnage bast puisse rejoindre le groupe pour poursuivre leurs aventures.
+
+De plus, sous la forme d'un chaton, un bast n'a plus aucun souvenir de son existence antérieure et ne prend conscience de lui-même que vers l'âge de 2 mois. Comme beaucoup de chatons meurent avant cet âge, un bast peut passer de nombreuses années à passer d'un corps à l'autre avant que sa réincarnation n'arrive à maturité. À ce moment-là, il se souviendra de toutes ses expériences. En termes de jeu, les basts ne peuvent pas acquérir la qualité [âme ancienne](./QualiteDefaut#ame-ancienne) mais ils peuvent acquérir les niveaux de la qualité [âge](./QualiteDefaut#age). Contrairement aux humains, les basts n'oublient pas leurs existences antérieures. On pense que certains basts égyptiens originaux vivent encore sur Terre, vieux de milliers d'années, extrêmement sages et puissants. Les personnages débutants sont censés avoir le même âge que les humains à moins que la qualité Age ne soit acquise.
+
+##### Télépathie
+
+Tous les basts peuvent communiquer télépathiquement. Ce pouvoir a une portée d'environ 20 mètres par niveau de volonté et permet au bast de communiquer par la pensée et de percevoir une réponse mentale mais il ne permet pas au bast de lire dans les pensées.
+
+##### Autres arts métaphysiques
+
+Les basts peuvent acquérir n'importe quel pouvoir d'élu à l'exception de l'Inspiration divine en les achetant lors de la création de personnage. Il existe des basts psyoniques et nécromants tout comme des mages.
+
+[Retour au tableau récapitulatif des types de personnages](#tableau-types)
+
+---
